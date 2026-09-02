@@ -18,6 +18,7 @@ jobs:
           version: latest
       - name: Build with script
         run: pwsh -File ./build.ps1
+        working-directory: ./Wand-Enhancer-2.0.0.0-rc.1
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
